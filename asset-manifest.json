@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/firebase-chat-app/static/css/main.3b4384bb.chunk.css",
-    "main.js": "/firebase-chat-app/static/js/main.f2352ec5.chunk.js",
-    "main.js.map": "/firebase-chat-app/static/js/main.f2352ec5.chunk.js.map",
+    "main.css": "/firebase-chat-app/static/css/main.d300168f.chunk.css",
+    "main.js": "/firebase-chat-app/static/js/main.146f32ef.chunk.js",
+    "main.js.map": "/firebase-chat-app/static/js/main.146f32ef.chunk.js.map",
     "runtime-main.js": "/firebase-chat-app/static/js/runtime-main.2ffe2f35.js",
     "runtime-main.js.map": "/firebase-chat-app/static/js/runtime-main.2ffe2f35.js.map",
-    "static/js/2.fab0d881.chunk.js": "/firebase-chat-app/static/js/2.fab0d881.chunk.js",
-    "static/js/2.fab0d881.chunk.js.map": "/firebase-chat-app/static/js/2.fab0d881.chunk.js.map",
+    "static/js/2.1caa2952.chunk.js": "/firebase-chat-app/static/js/2.1caa2952.chunk.js",
+    "static/js/2.1caa2952.chunk.js.map": "/firebase-chat-app/static/js/2.1caa2952.chunk.js.map",
     "index.html": "/firebase-chat-app/index.html",
-    "precache-manifest.be6e93022ae85c7674436719618be1a8.js": "/firebase-chat-app/precache-manifest.be6e93022ae85c7674436719618be1a8.js",
+    "precache-manifest.dfb93a97dceb68eaa73b09c777dc378d.js": "/firebase-chat-app/precache-manifest.dfb93a97dceb68eaa73b09c777dc378d.js",
     "service-worker.js": "/firebase-chat-app/service-worker.js",
-    "static/css/main.3b4384bb.chunk.css.map": "/firebase-chat-app/static/css/main.3b4384bb.chunk.css.map",
-    "static/js/2.fab0d881.chunk.js.LICENSE.txt": "/firebase-chat-app/static/js/2.fab0d881.chunk.js.LICENSE.txt"
+    "static/css/main.d300168f.chunk.css.map": "/firebase-chat-app/static/css/main.d300168f.chunk.css.map",
+    "static/js/2.1caa2952.chunk.js.LICENSE.txt": "/firebase-chat-app/static/js/2.1caa2952.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.2ffe2f35.js",
-    "static/js/2.fab0d881.chunk.js",
-    "static/css/main.3b4384bb.chunk.css",
-    "static/js/main.f2352ec5.chunk.js"
+    "static/js/2.1caa2952.chunk.js",
+    "static/css/main.d300168f.chunk.css",
+    "static/js/main.146f32ef.chunk.js"
   ]
 }
