@@ -6,6 +6,8 @@
 
 body {
   background-color: rgb(243, 243, 243);
+  scroll-behavior: smooth;
+  overscroll-behavior-y: none;
 }
 
 .app {
@@ -90,6 +92,7 @@ body {
   text-align: center;
   font-size: 1.5rem;
   line-height: 50px;
+  background-color: #ff0077;
 }
 
 .app__message.app__message-current-user {

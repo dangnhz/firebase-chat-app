@@ -3,7 +3,7 @@ import { InputGroup, FormControl, Button } from 'react-bootstrap';
 import firebase from 'firebase';
 import db from '../firebase';
 
-const MessageForm = ({ setMessages, username }) => {
+const MessageForm = ({ username, avatarColor }) => {
   const [message, setMessage] = useState('');
 
   const handleOnChange = (e) => {
@@ -15,10 +15,11 @@ const MessageForm = ({ setMessages, username }) => {
     const newMessage = {
       username: username,
       message: message,
+      avatar: avatarColor,
       timestamp: firebase.firestore.FieldValue.serverTimestamp(),
     };
     db.collection('messages').add(newMessage);
-    // setMessages((previousMessages) => [...previousMessages, newMessage]);
+
     setMessage('');
   };
   return (

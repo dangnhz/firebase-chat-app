@@ -7,11 +7,24 @@ import FlipMove from 'react-flip-move';
 import './App.css';
 
 import db from './firebase';
+import colors from './colors';
+
+function randomColors(colors) {
+  const color = colors[Math.floor(Math.random() * colors.length)];
+  return color;
+}
 
 function App() {
   const [username, setUsername] = useState('');
   const [messages, setMessages] = useState([]);
+  const [avatarColor, setAvatarColor] = useState('#6666FF');
 
+  // set avatar background for user
+  useEffect(() => {
+    setAvatarColor(randomColors(colors));
+  }, []);
+
+  // fetch messages from database
   useEffect(() => {
     db.collection('messages')
       .orderBy('timestamp', 'asc')
@@ -24,6 +37,7 @@ function App() {
       });
   }, []);
 
+  //scroll to bottom every time new message received
   useEffect(() => {
     const msgBox = document.getElementById('messages-box');
     if (msgBox) {
@@ -55,7 +69,7 @@ function App() {
               ))}
             </FlipMove>
           </div>
-          <MessageForm setMessages={setMessages} username={username} />
+          <MessageForm username={username} avatarColor={avatarColor} />
         </div>
       )}
     </div>

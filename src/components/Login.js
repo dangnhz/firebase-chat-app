@@ -13,7 +13,7 @@ const Login = ({ setUsername }) => {
   };
 
   return (
-    <div className='app__login text-center mt-5'>
+    <div className='app__login text-center mt-5 p-3'>
       <h1 className='mt-5 mb-5'>Welcome</h1>
       <form onSubmit={handleOnSubmit}>
         <InputGroup className='mb-3'>
