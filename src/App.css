@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(243, 243, 243);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  height: 100vh;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+}
+.app__main {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 0 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__login {
+  height: 100%;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.app__main-header {
+  background-color: white;
+  padding: 1rem;
+  /* box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.app__message-form {
+  position: fixed;
+  bottom: 0.5rem;
+  left: 0;
+  right: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+  /* box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1); */
+}
+
+.app__main-messages {
+  width: 100%;
+  overflow-y: scroll;
+  height: calc(100vh - 100px);
+  padding-bottom: 80px;
+  overflow-x: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(243, 243, 243);
+}
+
+.app__main-messages::-webkit-scrollbar {
+  display: none;
+}
+
+.app__message {
+  margin: 1rem 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.app__message-wrapper {
+  max-width: 60%;
+}
+
+.app__message-card {
+  border-radius: 20px !important;
+  border: none !important;
+  min-width: 60px;
+  background: white;
+  padding: 5px 15px !important;
+}
+
+.app__message-avatar {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  border-radius: 50%;
   color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.app__message.app__message-current-user {
+  justify-content: flex-end;
+  text-align: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__message.app__message-current-user .app__message-avatar {
+  display: none;
+}
+
+.app__message.app__message-current-user .app__message-card {
+  background-color: #00bbff;
+  color: white;
 }
